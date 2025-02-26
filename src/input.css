@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .cards-width {
+    width: clamp(240px, 80%, 16rem);
+  }
+  .quote-top-position {
+    top: calc(1.8rem - 5vw);
+  }
+  .quote-bottom-position {
+    bottom: calc(-0.8rem - 5vw);
+  }
+  .toggle-btn {
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent
+  }
+}
+
+:root {
+  --navy-blue: #001f3f;
+  --medium-navy-blue1: #003A80;
+  --medium-navy-blue2: #0050A0;
+  --vivid-navy-blue: #0047AB;
+  --vivid-navy-blue-hover: #1C5FB5;
+  --vivid-navy-blue-active: #3A76BF;
+  --bright-navy-blue: #1772D0;
+  --dodger-blue: #1E90FF;
+  --steel-blue: #4682B4;
+  --azure-blue: #258DC8;
+  --sky-blue: #45A3E5;
+  --crimson-red: #B31B1B;
+  --auto-red1: #d40000;
+  --auto-red2: #f80000;
+  --scarlett-red: #FF2400;
+}
+
