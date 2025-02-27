@@ -979,6 +979,18 @@ video {
   padding-top: 26px;
 }
 
+.pb-\[12px\] {
+  padding-bottom: 12px;
+}
+
+.pb-\[10px\] {
+  padding-bottom: 10px;
+}
+
+.pt-\[22px\] {
+  padding-top: 22px;
+}
+
 .text-left {
   text-align: left;
 }
