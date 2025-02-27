@@ -645,10 +645,6 @@ video {
   height: 3.5px;
 }
 
-.h-\[9rem\] {
-  height: 9rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -763,8 +759,8 @@ video {
   cursor: pointer;
 }
 
-.scroll-mt-20 {
-  scroll-margin-top: 5rem;
+.scroll-mt-24 {
+  scroll-margin-top: 6rem;
 }
 
 .list-none {
@@ -842,6 +838,10 @@ video {
   text-wrap: balance;
 }
 
+.break-words {
+  overflow-wrap: break-word;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -881,11 +881,6 @@ video {
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
-.bg-teal-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -905,9 +900,14 @@ video {
   padding-right: 1rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.px-\[32px\] {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .px-\[8\%\] {
@@ -951,6 +951,10 @@ video {
   padding-bottom: 14px;
 }
 
+.pb-\[32px\] {
+  padding-bottom: 32px;
+}
+
 .pl-7 {
   padding-left: 1.75rem;
 }
@@ -965,6 +969,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-\[24px\] {
+  padding-top: 24px;
 }
 
 .pt-\[26px\] {
@@ -1053,9 +1061,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1065,12 +1073,26 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .duration-500 {
   transition-duration: 500ms;
 }
 
 .cards-width {
-  width: clamp(240px, 80%, 16rem);
+  width: clamp(240px, 76%, 16rem);
+}
+
+.image-height {
+  height: clamp(164px, 38vw, 11.25rem);
 }
 
 .toggle-btn>div::after {
@@ -1323,6 +1345,12 @@ video {
 .after\:quote-bottom-position::after {
   content: var(--tw-content);
   bottom: calc(-0.8rem - 5vw);
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-\[var\(--vivid-navy-blue-hover\)\]:hover {

@@ -4,7 +4,10 @@
 
 @layer utilities {
   .cards-width {
-    width: clamp(240px, 80%, 16rem);
+    width: clamp(240px, 76%, 16rem);
+  }
+  .image-height {
+    height: clamp(164px, 38vw, 11.25rem);
   }
   .quote-top-position {
     top: calc(1.8rem - 5vw);
