@@ -40,8 +40,8 @@ function initApp() {
         option.style.paddingBlock = `0px`;
         console.log("resetting padding...");
       }
-      const paddingTop = mobileMenu.offsetHeight * 0.055 * 2.5;
-      const paddingBottom = mobileMenu.offsetHeight * 0.09 * 2.5;
+      const paddingTop = mobileMenu.offsetHeight * 0.055 * 2.6;
+      const paddingBottom = mobileMenu.offsetHeight * 0.09 * 2.6;
       const totalHeight = mobileMenu.offsetHeight;
       const usedHeight = mobileNav.offsetHeight + paddingTop + paddingBottom;
   
